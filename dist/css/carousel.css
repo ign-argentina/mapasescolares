@@ -39,17 +39,22 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: 200px;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
   z-index: 10;
 }
-
+.carousel-caption a {
+    font-size: 12px;
+}
+.carousel-caption h1 {
+    font-size: 25px;
+}
 /* Declare heights because of positioning of img element */
 .carousel .item {
-  height: 500px;
+  height: 200px;
   background-color: #777;
 }
 .carousel-inner > .item > img {
@@ -57,7 +62,7 @@ body {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 500px;
+  height: 200px;
 }
 
 
@@ -116,12 +121,26 @@ body {
   }
 
   /* Bump up size of carousel content */
+  .carousel {
+    height: 500px;
+  }
+  .carousel .item {
+    height: 500px;
+  }
   .carousel-caption p {
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 1.4;
   }
-
+  .carousel-caption a {
+      font-size: 18px;
+  }
+  .carousel-caption h1 {
+      font-size: 36px;
+  }
+  .carousel-inner > .item > img{
+    height: 500px;
+  }
   .featurette-heading {
     font-size: 50px;
   }
