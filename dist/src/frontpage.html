@@ -11,6 +11,9 @@
 
     <title>Mapas escolares</title>
 
+    <!-- Jquery -->
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
 
@@ -35,7 +38,12 @@
 <!-- NAVBAR
 ================================================== -->
   <body>
-
+    <div id="header" style="display: none;"></div>
+    <script>
+      $(function(){
+          $("#header").load("header.html");
+      });
+    </script>
     <!-- Carousel
     ================================================== -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel" style="margin:-10px">
