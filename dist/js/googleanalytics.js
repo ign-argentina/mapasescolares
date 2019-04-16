@@ -1,4 +1,3 @@
-@@ -0,0 +1,6 @@
 $.getScript("https://www.googletagmanager.com/gtag/js?id=UA-136146579-3", function( data, textStatus, jqxhr ) {
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
