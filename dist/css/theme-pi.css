@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Lato|Lato");
 /*!
  * Default theme for Pingendo 
- * Homepage: http://pingendo.com  
+ * Homepage: https://pingendo.com  
  * Copyright 2015 Pingendo 
  * Licensed under MIT 
  * Based on Bootstrap v3.3.2
@@ -6546,12 +6546,12 @@ button.close {
 }
 /*!
  * Pingendo customization for Bootstrap
- * Homepage: http://pingendo.com
+ * Homepage: https://pingendo.com
  * Copyright 2015 Pingendo
  * Licensed under MIT
 */
 /* Google web fonts support */
-/*@import  url("http://fonts.googleapis.com/css?family=");*/
+/*@import  url("https://fonts.googleapis.com/css?family=");*/
 /* TODO: webkit need this why ?*/
 html,
 body {

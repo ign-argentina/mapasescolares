@@ -112,67 +112,67 @@
 			width: 238px;			
 		}
 		#selectionButtonPlanisferio{
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/00Boton_Planisferio_02.png'), url('http://mapasescolares.ign.gob.ar/images/botones/00Boton_Planisferio_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/00Boton_Planisferio_02.png'), url('https://mapasescolares.ign.gob.ar/images/botones/00Boton_Planisferio_01.png');
 			background-repeat: no-repeat;
 		}
 
 		#selectionButtonPlanisferio:hover {
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/00Boton_Planisferio_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/00Boton_Planisferio_01.png');
 			cursor: pointer;
 		}
 
 		#selectionButtonAmerica{
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/01Boton_America_02.png'),
-			url('http://mapasescolares.ign.gob.ar/images/botones/01Boton_America_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/01Boton_America_02.png'),
+			url('https://mapasescolares.ign.gob.ar/images/botones/01Boton_America_01.png');
 			background-repeat: no-repeat;
 		}
 
 		#selectionButtonAmerica:hover {
-		    background-image: url('http://mapasescolares.ign.gob.ar/images/botones/01Boton_America_01.png');
+		    background-image: url('https://mapasescolares.ign.gob.ar/images/botones/01Boton_America_01.png');
 		    cursor: pointer;
 		}
 
 
 		#selectionButtonArgentina{
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/02Boton_Arg_bicontinental_02.png'),
-			url('http://mapasescolares.ign.gob.ar/images/botones/02Boton_Arg_bicontinental_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/02Boton_Arg_bicontinental_02.png'),
+			url('https://mapasescolares.ign.gob.ar/images/botones/02Boton_Arg_bicontinental_01.png');
 			background-repeat: no-repeat;
 		}
 
 		#selectionButtonArgentina:hover {
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/02Boton_Arg_bicontinental_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/02Boton_Arg_bicontinental_01.png');
 			cursor: pointer;
 		}
 
 		#selectionButtonAntartida{
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/03Boton_Antartida_02.png'),
-			url('http://mapasescolares.ign.gob.ar/images/botones/03Boton_Antartida_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/03Boton_Antartida_02.png'),
+			url('https://mapasescolares.ign.gob.ar/images/botones/03Boton_Antartida_01.png');
 			background-repeat: no-repeat;
 		}
 
 		#selectionButtonAntartida:hover {
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/03Boton_Antartida_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/03Boton_Antartida_01.png');
 			cursor: pointer;
 		}
 
 		#selectionButtonIslasMalvinas{
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/04Boton_Malvinas_02.png'),
-			url('http://mapasescolares.ign.gob.ar/images/botones/04Boton_Malvinas_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/04Boton_Malvinas_02.png'),
+			url('https://mapasescolares.ign.gob.ar/images/botones/04Boton_Malvinas_01.png');
 			background-repeat: no-repeat;
 		}
 
 		#selectionButtonIslasMalvinas:hover {
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/04Boton_Malvinas_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/04Boton_Malvinas_01.png');
 			cursor: pointer;
 		}
 		#selectionButtonAMBA{
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/05Boton_AMBA_02.png'),
-			url('http://mapasescolares.ign.gob.ar/images/botones/05Boton_AMBA_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/05Boton_AMBA_02.png'),
+			url('https://mapasescolares.ign.gob.ar/images/botones/05Boton_AMBA_01.png');
 			background-repeat: no-repeat;
 		}
 
 		#selectionButtonAMBA:hover {
-			background-image: url('http://mapasescolares.ign.gob.ar/images/botones/05Boton_AMBA_01.png');
+			background-image: url('https://mapasescolares.ign.gob.ar/images/botones/05Boton_AMBA_01.png');
 			cursor: pointer;
 		}
 
