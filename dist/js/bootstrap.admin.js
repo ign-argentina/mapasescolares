@@ -72,7 +72,7 @@
       var $context = $(context);
       var $preview = $context.find('#bootswatch-preview');
       $preview.once('bootswatch', function () {
-        $.get("http://api.bootswatch.com/3/", function (data) {
+        $.get("https://api.bootswatch.com/3/", function (data) {
           var themes = data.themes;
           for (var i = 0, len = themes.length; i < len; i++) {
             $('<a/>').attr({

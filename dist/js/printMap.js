@@ -84,7 +84,7 @@
                 function printMap(callback){
                     //putTextAreaIntoPElement();
                     /*
-                    var style = 'http://mapasescolares.ign.gob.ar/dist/css/easyPrint.css';
+                    var style = 'https://mapasescolares.ign.gob.ar/dist/css/easyPrint.css';
                     $('#map').print({stylesheet:style});
                     
                     if (typeof callback === "function"){
