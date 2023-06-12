@@ -1,4 +1,4 @@
-// Website tour http://eragonj.github.io/Trip.js/
+// Website tour https://eragonj.github.io/Trip.js/
 /*    var $tourcontrols  = '<div id="tourcontrols" class="tourcontrols">';
                 $tourcontrols += '<p>¿Desea realizar un tour de la herramienta?</p>';
                 $tourcontrols += '<span class="button" id="activatetour">Si</span> <span class="button" id="dismisstour">No, gracias</span>';
@@ -91,7 +91,7 @@
                 },
                 {
                   sel : $('.leaflet-control-easyPrint-button'),
-                  content : 'Para guardar el mapa hacé click en el botón imprimir <br> <br> <img src= "http://i.imgur.com/t8Ka9kq.png"> <br> <br> ',
+                  content : 'Para guardar el mapa hacé click en el botón imprimir <br> <br> <img src= "https://i.imgur.com/t8Ka9kq.png"> <br> <br> ',
                   position : 'e',
                   animation: 'fadeIn',
                   expose: true,
@@ -106,7 +106,7 @@
                 },
                 {
                   sel : $('.leaflet-control-easyPrint-button'),
-                  content : 'Tené en cuenta si la imagen que vas a guardar es una imagen apaisada o vertical y hacé click en \'Entendido\' <br> <br> <img src="http://i.imgur.com/lwmr8Ml.png"> <br> <br>',
+                  content : 'Tené en cuenta si la imagen que vas a guardar es una imagen apaisada o vertical y hacé click en \'Entendido\' <br> <br> <img src="https://i.imgur.com/lwmr8Ml.png"> <br> <br>',
                   position : 'e',
                   animation: 'fadeIn',
                   expose: true,
@@ -121,7 +121,7 @@
 
                 {
                   sel : $('.leaflet-control-easyPrint-button'),
-                  content : 'En la nueva ventana que surgió hacé click en el boton &nbsp \'cambiar\' <br> <br> <img src="http://i.imgur.com/e35YG5j.png">  <br> <br>',
+                  content : 'En la nueva ventana que surgió hacé click en el boton &nbsp \'cambiar\' <br> <br> <img src="https://i.imgur.com/e35YG5j.png">  <br> <br>',
                   position : 'e',
                   animation: 'fadeIn',
                   expose: true,
@@ -136,7 +136,7 @@
 
                 {
                   sel : $('.leaflet-control-easyPrint-button'),
-                  content : 'Hacé click en la opción &nbsp \'Guardar como PDF\' <br> <br> <img src="http://i.imgur.com/MD6SRGT.png"> <br> <br>',
+                  content : 'Hacé click en la opción &nbsp \'Guardar como PDF\' <br> <br> <img src="https://i.imgur.com/MD6SRGT.png"> <br> <br>',
                   position : 'e',
                   animation: 'fadeIn',
                   expose: true,
@@ -151,7 +151,7 @@
 
                 {
                   sel : $('.leaflet-control-easyPrint-button'),
-                  content : 'En la opción de &nbsp \'Diseño\' &nbsp elegí &nbsp \'Horizontal\' &nbsp o &nbsp \'Vertical\' &nbsp de acuerdo a la orientación del mapa <br> <br> <img src="http://i.imgur.com/mBflEc4.png"> <br> <br>',
+                  content : 'En la opción de &nbsp \'Diseño\' &nbsp elegí &nbsp \'Horizontal\' &nbsp o &nbsp \'Vertical\' &nbsp de acuerdo a la orientación del mapa <br> <br> <img src="https://i.imgur.com/mBflEc4.png"> <br> <br>',
                   position : 'e',
                   animation: 'fadeIn',
                   expose: true,
@@ -166,7 +166,7 @@
 
                 {
                   sel : $('.leaflet-control-easyPrint-button'),
-                  content : 'Por último hacé click en &nbsp\'Guardar\' &nbsp <br> <br> <img src="http://i.imgur.com/067ft0e.png"> <br> <br>',
+                  content : 'Por último hacé click en &nbsp\'Guardar\' &nbsp <br> <br> <img src="https://i.imgur.com/067ft0e.png"> <br> <br>',
                   position : 'e',
                   animation: 'fadeIn',
                   expose: true,
