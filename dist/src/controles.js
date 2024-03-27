@@ -2,13 +2,13 @@
 L.control.layers(baseLayers, overlays).addTo(mapa);
 
 L.control.coordinates({
-	useDMS:true,
-	labelTemplateLat:"S {y}",
-	labelTemplateLng:"O {x}",
-	useLatLngOrder:true
+  useDMS: true,
+  labelTemplateLat: "S {y}",
+  labelTemplateLng: "O {x}",
+  useLatLngOrder: true
 }).addTo(mapa);
 
-L.control.scale({maxWidth: 200}).addTo(mapa);
+L.control.scale({ maxWidth: 200 }).addTo(mapa);
 
 $(".leaflet-control-layers-base").prepend("<b>Capa base</b>");
 $(".leaflet-control-layers-overlays").prepend("<b>Superpuestas</b>");

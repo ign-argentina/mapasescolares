@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
-    
-    <head>
-        <meta name="description" content="Student's personalized learning maps">
-        <meta name="keywords" content="maps, education, jquery, leaflet, geography">
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-        <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="../css/theme-pi.css">
-        <!-- Menu JQuery -->
-        <link rel="stylesheet" href="../css/menuJQuery.css">
-        <link rel="stylesheet" type="text/css" href="../css/form.css" media="screen">
 
-        <!-- <script type="text/javascript" src="https://www.ign.gob.ar/argenmap2/argenmap.jquery/argenmap.jquery.min.js"></script> -->
+<head>
+  <meta name="description" content="Student's personalized learning maps">
+  <meta name="keywords" content="maps, education, jquery, leaflet, geography">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="../css/theme-pi.css">
+  <!-- Menu JQuery -->
+  <link rel="stylesheet" href="../css/menuJQuery.css">
+  <link rel="stylesheet" type="text/css" href="../css/form.css" media="screen">
 
-        <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
-        <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <!-- <script type="text/javascript" src="https://www.ign.gob.ar/argenmap2/argenmap.jquery/argenmap.jquery.min.js"></script> -->
 
-        <!--Google Maps Imagery-->
-        <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
+  <link rel="stylesheet" href="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.css" />
+  <script src="https://npmcdn.com/leaflet@1.0.0-rc.2/dist/leaflet.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
-        <!--GoogleMutant-->
-        <script src='https://unpkg.com/leaflet.gridlayer.googlemutant@latest/Leaflet.GoogleMutant.js'></script>
+  <!--Google Maps Imagery-->
+  <script src="https://maps.googleapis.com/maps/api/js" async defer></script>
 
-        <!--Posición del mouse-->
-        <link rel="stylesheet" href="https://mrmufflon.github.io/Leaflet.Coordinates/dist/Leaflet.Coordinates-0.1.3.css">
-        <script type="text/javascript" src="https://mrmufflon.github.io/Leaflet.Coordinates/dist/Leaflet.Coordinates-0.1.3.min.js"></script>
+  <!--GoogleMutant-->
+  <script src='https://unpkg.com/leaflet.gridlayer.googlemutant@latest/Leaflet.GoogleMutant.js'></script>
 
-        <!-- Estilo de màpa de contacto -->
-        <link href='styles.css' rel='stylesheet'/>
-        <!--
+  <!--Posición del mouse-->
+  <link rel="stylesheet" href="https://mrmufflon.github.io/Leaflet.Coordinates/dist/Leaflet.Coordinates-0.1.3.css">
+  <script type="text/javascript" src="https://mrmufflon.github.io/Leaflet.Coordinates/dist/Leaflet.Coordinates-0.1.3.min.js"></script>
+
+  <!-- Estilo de màpa de contacto -->
+  <link href='styles.css' rel='stylesheet' />
+  <!--
         <script  type="text/javascript" >
             $(function() {
                 //El div tiene id="mapa"
@@ -45,77 +45,79 @@
                 $('#mapa').agregarCapaKML(capaKml).centro(-34.5723,-58.4400).zoom(15);
             });        
         </script> 
-        -->   
-        <script>   
-            $(function(){
-              $("#header").load("header.html"); 
-            });
-        </script>
-        <script> 
-            $(function(){
-              $("#footer").load("footer.html"); 
-            });
-        </script>        
-        <style type="text/css">
-            .section > .container > .row {
-              margin: 35px 0px;
-            }
-        </style>
-    </head>
+        -->
+  <script>
+    $(function () {
+      $("#header").load("header.html");
+    });
+  </script>
+  <script>
+    $(function () {
+      $("#footer").load("footer.html");
+    });
+  </script>
+  <style type="text/css">
+    .section>.container>.row {
+      margin: 35px 0px;
+    }
+  </style>
+</head>
 
-    
-    <body>
-        <div id="wrapper" style="padding-bottom: 10em;">
-            <div id="header" class="navbar navbar-default navbar-static-top"></div>
+<body>
+  <div id="wrapper" style="padding-bottom: 10em;">
+    <div id="header" class="navbar navbar-default navbar-static-top"></div>
 
-            <div class="section" id="tool">
-                <div class="container">
-                    <div class="row">
-                        <form id="contact-form" name="contact-form" class="col-md-6 styled-form text-left" action="mailto:mapasescolares@ign.gob.ar" method="post" accept-charset="utf-8">
-                            <h1 class="pagetitle">Contacto</h1>                        
-                            <div class="note">
-                                <p></p>
-                                <p>Estamos para responder cualquier duda que tengas acerca del uso de este portal de <strong>Mapas Escolares</strong>.
-                                    <br>También podés enviarnos consultas o sugerencias sobre contenidos o herramientas que te gustaría encontrar en esta página.  ¡Esperamos tus aportes!
-                                    <br>Trataremos de hacerle llegar su respuesta lo mas rapido posible.</p>
-                                <p></p>
-                            </div>
-                            <br>
-                            <br>
-                            <iframe style="border: 0" src="https://www.ign.gob.ar/igncontacto/formcontacto.php?tema=Mapas Escolares" height=500px width=550px></iframe>
-                        </form>
-                        <div class="col-md-6 text-left">
-                            <div id="mapa" style="height:300px;"></div>
+    <div class="section" id="tool">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <form id="contact-form" name="contact-form" class=" styled-form text-left" action="mailto:mapasescolares@ign.gob.ar" method="post" accept-charset="utf-8">
+              <h1 class="pagetitle">Contacto</h1>
+              <div class="note">
+                <p></p>
+                <p>Estamos para responder cualquier duda que tengas acerca del uso de este portal de <strong>Mapas Escolares</strong>.
+                  <br>También podés enviarnos consultas o sugerencias sobre contenidos o herramientas que te gustaría encontrar en esta página. ¡Esperamos tus aportes!
+                  <br>Trataremos de hacerle llegar su respuesta lo mas rapido posible.
+                </p>
+                <p></p>
+              </div>
+              <br>
+              <br>
+              <iframe style="border: 0" src="https://www.ign.gob.ar/igncontacto/formcontacto.php?tema=Mapas Escolares" height=500px width=550px></iframe>
+            </form>
+          </div>
+          <div class="col-md-4 text-left">
+            <!-- <div id="mapa" style="height:300px;"></div>
                             <script type="text/javascript" src="mapa.js"></script>
                             <script type="text/javascript" src="controles.js"></script>
-                            <br>
-                            <div style="padding-top: 300px">                        
-                                <p style="font-weight: bold">Email</p>
-                                <p>
-                                    <a href="mailto:mapasescolares@ign.gob.ar" title="Haga click para enviarnos un email">mapasescolares@ign.gob.ar</a>
-                                </p>
-                                <p style="font-weight: bold">Teléfonos</p>
-                                <p>
-                                    <a href="tel:00541145765545" title="Haga click para llamarnos">(54-11) 4576-5545/49 - 4576-5576/79</a>
-                                </p>
-                                <p style="font-weight: bold">Dirección</p>
-                                <p>
-                                    <address>Instituto Geográfico Nacional
-                                        <br>Av. Cabildo 381
-                                        <br>C1426 - AAD
-                                        <br>Ciudad Autónoma de Buenos Aires
-                                        <br>República Argentina                                      
-                                    </address>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <br> -->
+            <div>
+              <p style="font-weight: bold">Email</p>
+              <p>
+                <a href="mailto:mapasescolares@ign.gob.ar" title="Haga click para enviarnos un email">mapasescolares@ign.gob.ar</a>
+              </p>
+              <p style="font-weight: bold">Teléfonos</p>
+              <p>
+                <a href="tel:00541145765545" title="Haga click para llamarnos">(54-11) 4576-5545/49 - 4576-5576/79</a>
+              </p>
+              <p style="font-weight: bold">Dirección</p>
+              <p>
+              <address>Instituto Geográfico Nacional
+                <br>Av. Cabildo 381
+                <br>C1426 - AAD
+                <br>Ciudad Autónoma de Buenos Aires
+                <br>República Argentina
+              </address>
+              </p>
             </div>
+          </div>
         </div>
-        <footer class="section section-primary" style="position:fixed;">
-            <div id="footer"></div>
-        </footer>        
-    </body>
+      </div>
+    </div>
+  </div>
+  <footer class="section section-primary" style="position:fixed;">
+    <div id="footer"></div>
+  </footer>
+</body>
 
 </html>
