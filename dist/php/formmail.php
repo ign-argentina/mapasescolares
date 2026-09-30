@@ -9,11 +9,11 @@ $FM_VERS = "9.10"; // script version
  * This script is free for all use as described in the "Copying and Use" and
  * "Warranty and Disclaimer" sections below.
  *
- * Visit us at http://www.tectite.com/ for updates and more information.
+ * Visit us at https://www.tectite.com/ for updates and more information.
  *
  *** If you use Tectite FormMail, please support its development and other
  *** freeware products by putting the following link on your website:
- ***  Visit www.tectite.com for free <a href="http://www.tectite.com/">FormMail</a>.
+ ***  Visit www.tectite.com for free <a href="https://www.tectite.com/">FormMail</a>.
  *
  * Author: Russell Robinson
  * First released: 2nd October 2001 
@@ -29,7 +29,7 @@ $FM_VERS = "9.10"; // script version
  *  That's it!  (Alternatively, just read the Quick Start and/or
  *  Quicker Start section below).
  *  Full configuration documentation is here:
- *      http://www.tectite.com/fmdoc/index.php
+ *      https://www.tectite.com/fmdoc/index.php
  *
  *  NOTE: do not read or modify this script or any PHP script
  *  with DreamWeaver or FrontPage!
@@ -55,7 +55,7 @@ $FM_VERS = "9.10"; // script version
  *  2. Install this file as formmail.php (or other name ending in .php)
  *     on your web server.
  *     Test alerts by using your browser to open a URL to the script:
- *          http://www.yourhost.com/formmail.php?testalert=1
+ *          https://www.yourhost.com/formmail.php?testalert=1
  *     Alerts are the only way FormMail can tell you the details of
  *     errors or faults.
  *  3. Create an HTML form and:
@@ -67,18 +67,18 @@ $FM_VERS = "9.10"; // script version
  *  Once you have FormMail working, you may be interested in some advanced
  *  usage and features.  We have HOW-TO guides at www.tectite.com which
  *  describe many of the advanced processing you can do with FormMail.
- *      http://www.tectite.com/fmhowto/guides.php
+ *      https://www.tectite.com/fmhowto/guides.php
  *
  * Quicker Start
  * ~~~~~~~~~~~~~
  *  Use the FormMail Configuration Wizard here:
- *      http://www.tectite.com/wizards/fmconf.php
+ *      https://www.tectite.com/wizards/fmconf.php
  *  By answering a few questions you'll get a configured FormMail and
  *  a sample HTML form ready to upload and use on your server.
  *
  * Features
  * ~~~~~~~~
- *  For a list of features go to: http://www.tectite.com/formmailpage.php
+ *  For a list of features go to: https://www.tectite.com/formmailpage.php
  *
  * Security
  * ~~~~~~~~
@@ -96,12 +96,12 @@ $FM_VERS = "9.10"; // script version
  *  and one strongly recommended setting: DEF_ALERT
  *
  *  Full configuration information is available here:
- *      http://www.tectite.com/fmdoc/index.php
+ *      https://www.tectite.com/fmdoc/index.php
  *
  * Creating Forms
  * ~~~~~~~~~~~~~~
  *  Go to this URL to learn how to write HTML forms for use with
- *  Tectite FormMail: http://www.tectite.com/fmdoc/creating_forms.php
+ *  Tectite FormMail: https://www.tectite.com/fmdoc/creating_forms.php
  *
  * Copying and Use (Software License)
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -120,7 +120,7 @@ $FM_VERS = "9.10"; // script version
  *
  *  By using any of our products, including this script, you are
  *  agreeing to our standard Terms and Conditions, available here:
- *      http://www.tectite.com/TermsAndConditions.pdf
+ *      https://www.tectite.com/TermsAndConditions.pdf
  *
  *  This is free software and the Software License shown above
  *  is to be read in conjunction with our standard Terms and Conditions.
@@ -143,9 +143,9 @@ $FM_VERS = "9.10"; // script version
  *  faults you've detected as soon as possible.
  *
  *  To contact us please register on our forums at:
- *      http://www.tectite.com/vbforums/
+ *      https://www.tectite.com/vbforums/
  *  or view our contact information:
- *      http://www.tectite.com/contacts.php
+ *      https://www.tectite.com/contacts.php
  *
  * Version History
  * ~~~~~~~~~~~~~~~
@@ -158,7 +158,7 @@ $FM_VERS = "9.10"; // script version
  *
  *  You can read the complete version history of FormMail on our
  *  main website here:
- *   http://www.tectite.com/fmdoc/version_history.php
+ *   https://www.tectite.com/fmdoc/version_history.php
  */
 
 FMDebug('Submission to: ' . (isset($_SERVER['PHP_SELF']) ? $_SERVER['PHP_SELF'] : '') . ' from: ' .
@@ -317,12 +317,12 @@ class ExecEnv
 						// use http with port number
 						//
 					{
-						$this->_sScript = "http://" . $_SERVER["SERVER_NAME"] .
+						$this->_sScript = "https://" . $_SERVER["SERVER_NAME"] .
 						                  ":" . $_SERVER["SERVER_PORT"] .
 						                  $_SERVER["PHP_SELF"];
 					}
 				} else {
-					$this->_sScript = "http://" . $_SERVER["SERVER_NAME"] .
+					$this->_sScript = "https://" . $_SERVER["SERVER_NAME"] .
 					                  $_SERVER["PHP_SELF"];
 				}
 			} else {
@@ -409,7 +409,7 @@ if (!isset($REAL_DOCUMENT_ROOT)) {
 }
 
 if (isset($aServerVars['SERVER_PORT'])) {
-	$SCHEME = ($aServerVars['SERVER_PORT'] == 80) ? "http://" : "https://";
+	$SCHEME = ($aServerVars['SERVER_PORT'] == 80) ? "https://" : "https://";
 } else {
 	$SCHEME = "";
 }
@@ -434,25 +434,25 @@ if (isset($aServerVars['SERVER_NAME']) && $aServerVars['SERVER_NAME'] !== "") {
  * This is the *only* place where you need to modify things to use formmail.php
  * on your particular system.  This section finishes at "END OF CONFIGURATION".
  * Help for all settings can be found on our website:
- *  http://www.tectite.com/fmdoc/index.php
+ *  https://www.tectite.com/fmdoc/index.php
  *
  * Also, above each setting is a direct URL to the help information for the
  * setting.
  *****************************************************************************/
 
-/* Help: http://www.tectite.com/fmdoc/email_name.php */
+/* Help: https://www.tectite.com/fmdoc/email_name.php */
 $EMAIL_NAME = "maselloleandro"; /* the '^' is an important security feature! */
 
-/* Help: http://www.tectite.com/fmdoc/target_email.php */
+/* Help: https://www.tectite.com/fmdoc/target_email.php */
 $TARGET_EMAIL = array($EMAIL_NAME . "@gmail\.com$");
 
-/* Help: http://www.tectite.com/fmdoc/def_alert.php */
+/* Help: https://www.tectite.com/fmdoc/def_alert.php */
 $DEF_ALERT = "mapasescolares@ign.gob.ar";
 
-/* Help: http://www.tectite.com/fmdoc/site_domain.php */
+/* Help: https://www.tectite.com/fmdoc/site_domain.php */
 $SITE_DOMAIN = ""; /* your website domain name */
 
-/* Help: http://www.tectite.com/fmdoc/set_real_document_root.php */
+/* Help: https://www.tectite.com/fmdoc/set_real_document_root.php */
 $SET_REAL_DOCUMENT_ROOT = ""; /* overrides the value set by SetRealDocumentRoot function */
 
 //
@@ -463,45 +463,45 @@ if (isset($SET_REAL_DOCUMENT_ROOT) && $SET_REAL_DOCUMENT_ROOT !== "") {
 	$REAL_DOCUMENT_ROOT = $SET_REAL_DOCUMENT_ROOT;
 }
 
-/* Help: http://www.tectite.com/fmdoc/config_check.php */
+/* Help: https://www.tectite.com/fmdoc/config_check.php */
 $CONFIG_CHECK = array("TARGET_EMAIL");
 
-/* Help: http://www.tectite.com/fmdoc/at_mangle.php */
+/* Help: https://www.tectite.com/fmdoc/at_mangle.php */
 $AT_MANGLE = "";
 
-/* Help: http://www.tectite.com/fmdoc/target_urls.php */
+/* Help: https://www.tectite.com/fmdoc/target_urls.php */
 $TARGET_URLS = array(); /* default; no URLs allowed */
 
-/* Help: http://www.tectite.com/fmdoc/head_crlf.php */
+/* Help: https://www.tectite.com/fmdoc/head_crlf.php */
 $HEAD_CRLF = "\r\n";
 
-/* Help: http://www.tectite.com/fmdoc/body_lf.php */
+/* Help: https://www.tectite.com/fmdoc/body_lf.php */
 $BODY_LF = "\r\n"; /* the new default: use this for CR+LF */
 //$BODY_LF = "\n";       /* the old default: just LF */
 
-/* Help: http://www.tectite.com/fmdoc/from_user.php */
+/* Help: https://www.tectite.com/fmdoc/from_user.php */
 $FROM_USER = ""; /* the default - setting not used */
 
-/* Help: http://www.tectite.com/fmdoc/sendmail_f_option.php */
+/* Help: https://www.tectite.com/fmdoc/sendmail_f_option.php */
 $SENDMAIL_F_OPTION      = false;
 $SENDMAIL_F_OPTION_LINE = __LINE__ - 1; /* don't modify this line! */
 
-/* Help: http://www.tectite.com/fmdoc/fixed_sender.php */
+/* Help: https://www.tectite.com/fmdoc/fixed_sender.php */
 $FIXED_SENDER = "";
 
-/* Help: http://www.tectite.com/fmdoc/set_sender_from_email.php */
+/* Help: https://www.tectite.com/fmdoc/set_sender_from_email.php */
 $SET_SENDER_FROM_EMAIL = false;
 
-/* Help: http://www.tectite.com/fmdoc/ini_set_from.php */
+/* Help: https://www.tectite.com/fmdoc/ini_set_from.php */
 $INI_SET_FROM = false;
 
-/* Help: http://www.tectite.com/fmdoc/logdir.php */
+/* Help: https://www.tectite.com/fmdoc/logdir.php */
 $LOGDIR = ""; /* directory for log files; empty string to disallow log files */
 
-/* Help: http://www.tectite.com/fmdoc/autorespondlog.php */
+/* Help: https://www.tectite.com/fmdoc/autorespondlog.php */
 $AUTORESPONDLOG = ""; /* file name in $LOGDIR for the auto responder log; empty string for no auto responder log */
 
-/* Help: http://www.tectite.com/fmdoc/csv_file_settings.php */
+/* Help: https://www.tectite.com/fmdoc/csv_file_settings.php */
 $CSVDIR    = ""; /* directory for csv files; empty string to disallow csv files */
 $CSVSEP    = ","; /* comma separator between fields (columns) */
 $CSVINTSEP = ";"; /* semicolon is the separator for fields (columns) with multiple values (checkboxes, etc.) */
@@ -514,19 +514,19 @@ $CSVLINE = "\n"; /* line termination for CSV files.  The default is a single lin
 						server's operating system.  If you want to change
 	                    this value, you *must* set $CSVOPEN = "b". */
 
-/* Help: http://www.tectite.com/fmdoc/templatedir.php */
+/* Help: https://www.tectite.com/fmdoc/templatedir.php */
 $TEMPLATEDIR = ""; /* directory for template files; empty string if you don't have any templates */
 
-/* Help: http://www.tectite.com/fmdoc/templateurl.php */
+/* Help: https://www.tectite.com/fmdoc/templateurl.php */
 $TEMPLATEURL = ""; /* default; no template URL */
 
-/* Help: http://www.tectite.com/fmdoc/multiformdir.php */
+/* Help: https://www.tectite.com/fmdoc/multiformdir.php */
 $MULTIFORMDIR = ""; /* directory for multi-form template files; empty string if you're not using multi-forms */
 
-/* Help: http://www.tectite.com/fmdoc/multiformurl.php */
+/* Help: https://www.tectite.com/fmdoc/multiformurl.php */
 $MULTIFORMURL = ""; /* default; no multi-forms templates URL */
 
-/* Help: http://www.tectite.com/fmdoc/text_subs.php */
+/* Help: https://www.tectite.com/fmdoc/text_subs.php */
 $TEXT_SUBS = array(
 	array("srch" => "/\\\\r\\\\n/","repl" => "\r\n",),
 	array("srch" => "/\\\\n/","repl" => "\n",),
@@ -549,82 +549,82 @@ $TEXT_SUBS = array(
 	),
 );
 
-/* Help: http://www.tectite.com/fmdoc/authentication_settings.php */
+/* Help: https://www.tectite.com/fmdoc/authentication_settings.php */
 $AUTHENTICATE = "";
 //$AUTHENTICATE = "Basic cnVzc2VsbHI6dGVzdA==";        // example
 $AUTH_USER = "";
 $AUTH_PW   = "";
 
-/* Help: http://www.tectite.com/fmdoc/form_ini_file.php */
+/* Help: https://www.tectite.com/fmdoc/form_ini_file.php */
 $FORM_INI_FILE = "";
 
-/* Help: http://www.tectite.com/fmdoc/moduledir.php */
+/* Help: https://www.tectite.com/fmdoc/moduledir.php */
 $MODULEDIR = ".";
 
-/* Help: http://www.tectite.com/fmdoc/fmcompute.php */
+/* Help: https://www.tectite.com/fmdoc/fmcompute.php */
 $FMCOMPUTE = "fmcompute.php";
 
-/* Help: http://www.tectite.com/fmdoc/fmgeoip.php */
+/* Help: https://www.tectite.com/fmdoc/fmgeoip.php */
 $FMGEOIP = "fmgeoip.php";
 
-/* Help: http://www.tectite.com/fmdoc/advanced_templates.php */
+/* Help: https://www.tectite.com/fmdoc/advanced_templates.php */
 $ADVANCED_TEMPLATES = false; /* set to true for advanced templates */
 
-/* Help: http://www.tectite.com/fmdoc/limited_import.php */
+/* Help: https://www.tectite.com/fmdoc/limited_import.php */
 $LIMITED_IMPORT = true; /* set to true if your database cannot handle escaped quotes or newlines within imported data.  Microsoft Access is one example. */
 
-/* Help: http://www.tectite.com/fmdoc/valid_env.php */
+/* Help: https://www.tectite.com/fmdoc/valid_env.php */
 $VALID_ENV = array('HTTP_REFERER','REMOTE_HOST','REMOTE_ADDR','REMOTE_USER',
                    'HTTP_USER_AGENT'
 );
 
-/* Help: http://www.tectite.com/fmdoc/fileuploads.php */
+/* Help: https://www.tectite.com/fmdoc/fileuploads.php */
 $FILEUPLOADS = false; /* set to true to allow file attachments */
 
-/* Help: http://www.tectite.com/fmdoc/max_file_upload_size.php */
+/* Help: https://www.tectite.com/fmdoc/max_file_upload_size.php */
 $MAX_FILE_UPLOAD_SIZE = 0; /* default of 0 means that other software */
 // controls the maximum file upload size
 // (FormMail doesn't test the file size)
 
-/* Help: http://www.tectite.com/fmdoc/file_repository.php */
+/* Help: https://www.tectite.com/fmdoc/file_repository.php */
 $FILE_REPOSITORY = "";
 
-/* Help: http://www.tectite.com/fmdoc/file_mode.php */
+/* Help: https://www.tectite.com/fmdoc/file_mode.php */
 $FILE_MODE = 0664; /* always precede with 0 to specify octal! */
 
-/* Help: http://www.tectite.com/fmdoc/file_overwrite.php */
+/* Help: https://www.tectite.com/fmdoc/file_overwrite.php */
 $FILE_OVERWRITE = true;
 
-/* Help: http://www.tectite.com/fmdoc/next_num_file.php */
+/* Help: https://www.tectite.com/fmdoc/next_num_file.php */
 $NEXT_NUM_FILE = "";
 
-/* Help: http://www.tectite.com/fmdoc/put_data_in_url.php */
+/* Help: https://www.tectite.com/fmdoc/put_data_in_url.php */
 $PUT_DATA_IN_URL = true; /* set to true to place data in the URL */
 // for bad_url redirects
 
-/* Help: http://www.tectite.com/fmdoc/allow_get_method.php */
+/* Help: https://www.tectite.com/fmdoc/allow_get_method.php */
 $ALLOW_GET_METHOD = false;
 
-/* Help: http://www.tectite.com/fmdoc/db_see_input.php */
+/* Help: https://www.tectite.com/fmdoc/db_see_input.php */
 $DB_SEE_INPUT = false; /* set to true to just see the input values */
 
-/* Help: http://www.tectite.com/fmdoc/db_see_ini.php */
+/* Help: https://www.tectite.com/fmdoc/db_see_ini.php */
 $DB_SEE_INI = false; /* set to true to just see the ini file */
 
-/* Help: http://www.tectite.com/fmdoc/maxstring.php */
+/* Help: https://www.tectite.com/fmdoc/maxstring.php */
 $MAXSTRING = 1024; /* maximum string length for a value */
 
-/* Help: http://www.tectite.com/fmdoc/require_captcha.php */
+/* Help: https://www.tectite.com/fmdoc/require_captcha.php */
 $REQUIRE_CAPTCHA = ""; /* set to a message string if your forms */
 // must provide a CAPTCHA string
 
-/* Help: http://www.tectite.com/fmdoc/recaptcha_private_key.php */
+/* Help: https://www.tectite.com/fmdoc/recaptcha_private_key.php */
 $RECAPTCHA_PRIVATE_KEY = "";
 
-/* Help: http://www.tectite.com/fmdoc/bshowmesgnumbers.php */
+/* Help: https://www.tectite.com/fmdoc/bshowmesgnumbers.php */
 $bShowMesgNumbers = false;
 
-/* Help: http://www.tectite.com/fmdoc/filters.php */
+/* Help: https://www.tectite.com/fmdoc/filters.php */
 /* Note for Tectite personnel: the upgrade Wizard will merge new values
  * but be careful of $var usage and quoting in new entries.
  */
@@ -633,7 +633,7 @@ $FILTERS = array("encode" => "$REAL_DOCUMENT_ROOT/cgi-bin/fmencoder -kpubkey.txt
                  "csv"    => "csv"
 );
 
-/* Help: http://www.tectite.com/fmdoc/socket_filters.php */
+/* Help: https://www.tectite.com/fmdoc/socket_filters.php */
 $SOCKET_FILTERS = array(
 	"httpencode" => array("site"   => "YourSiteHere",
 	                      "port"   => 80,
@@ -653,48 +653,48 @@ $SOCKET_FILTERS = array(
 	),
 );
 
-/* Help: http://www.tectite.com/fmdoc/filter_attribs.php */
+/* Help: https://www.tectite.com/fmdoc/filter_attribs.php */
 $FILTER_ATTRIBS = array("encode"     => "Strips,MIME=application/vnd.fmencoded,Encrypts",
                         "httpencode" => "Strips,MIME=application/vnd.fmencoded,Encrypts",
                         "sslencode"  => "Strips,MIME=application/vnd.fmencoded,Encrypts",
                         "csv"        => "Strips,MIME=text/csv",
 );
 
-/* Help: http://www.tectite.com/fmdoc/check_for_new_version.php */
+/* Help: https://www.tectite.com/fmdoc/check_for_new_version.php */
 $CHECK_FOR_NEW_VERSION = true;
 $CHECK_DAYS            = 30;
 
-/* Help: http://www.tectite.com/fmdoc/scratch_pad.php */
+/* Help: https://www.tectite.com/fmdoc/scratch_pad.php */
 $SCRATCH_PAD = "";
 
-/* Help: http://www.tectite.com/fmdoc/cleanup_time.php */
+/* Help: https://www.tectite.com/fmdoc/cleanup_time.php */
 $CLEANUP_TIME = 60; /* cleanup time in minutes */
 
-/* Help: http://www.tectite.com/fmdoc/cleanup_chance.php */
+/* Help: https://www.tectite.com/fmdoc/cleanup_chance.php */
 $CLEANUP_CHANCE = 20; /* percentage probability that cleanup will be performed */
 
-/* Help: http://www.tectite.com/fmdoc/pear_settings.php */
+/* Help: https://www.tectite.com/fmdoc/pear_settings.php */
 $PEAR_SMTP_HOST = "";
 $PEAR_SMTP_PORT = 25;
 $PEAR_SMTP_USER = "";
 $PEAR_SMTP_PWD  = "";
 
-/* Help: http://www.tectite.com/fmdoc/alert_on_user_error.php */
+/* Help: https://www.tectite.com/fmdoc/alert_on_user_error.php */
 $ALERT_ON_USER_ERROR = true;
 
-/* Help: http://www.tectite.com/fmdoc/enable_attack_detection.php */
+/* Help: https://www.tectite.com/fmdoc/enable_attack_detection.php */
 $ENABLE_ATTACK_DETECTION = true;
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_url.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_url.php */
 $ATTACK_DETECTION_URL = "";
 
-/* Help: http://www.tectite.com/fmdoc/alert_on_attack_detection.php */
+/* Help: https://www.tectite.com/fmdoc/alert_on_attack_detection.php */
 $ALERT_ON_ATTACK_DETECTION = false;
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_mime.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_mime.php */
 $ATTACK_DETECTION_MIME = true;
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_junk.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_junk.php */
 $ATTACK_DETECTION_JUNK                   = false;
 $ATTACK_DETECTION_JUNK_CONSONANTS        = "bcdfghjklmnpqrstvwxz";
 $ATTACK_DETECTION_JUNK_VOWELS            = "aeiouy";
@@ -740,57 +740,57 @@ $ATTACK_DETECTION_JUNK_LANG_STRIP        = array(
 );
 $ATTACK_DETECTION_JUNK_IGNORE_FIELDS     = array();
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_dups.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_dups.php */
 $ATTACK_DETECTION_DUPS = array("realname","address1","address2","country","zip",
                                "phone","postcode","state","email"
 );
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_specials.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_specials.php */
 $ATTACK_DETECTION_SPECIALS = true;
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_specials.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_specials.php */
 $ATTACK_DETECTION_SPECIALS_ONLY_EMAIL = array("derive_fields","required",
                                               "mail_options","good_url","bad_url","good_template",
                                               "bad_template"
 );
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_specials.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_specials.php */
 $ATTACK_DETECTION_SPECIALS_ANY_EMAIL = array("subject");
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_many_urls.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_many_urls.php */
 $ATTACK_DETECTION_MANY_URLS = 0;
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_many_url_fields.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_many_url_fields.php */
 $ATTACK_DETECTION_MANY_URL_FIELDS = 0;
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_url_patterns.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_url_patterns.php */
 $ATTACK_DETECTION_URL_PATTERNS = array(
 	'(^|[^-a-z_.0-9]+)(?<!@)([-a-z0-9]+\.)+(com|org|net|biz|info|name|pro|tel|asia|cat)\b',
 	'(^|[^-a-z_.0-9]+)(?<!@)([-a-z0-9]+\.)+(com{0,1}|org|net)\.[a-z][a-z]\b'
 );
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_ignore_errors.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_ignore_errors.php */
 $ATTACK_DETECTION_IGNORE_ERRORS = false;
 
-/* Help: http://www.tectite.com/fmdoc/attack_detection_reverse_captcha.php */
+/* Help: https://www.tectite.com/fmdoc/attack_detection_reverse_captcha.php */
 $ATTACK_DETECTION_REVERSE_CAPTCHA = array();
 
-/* Help: http://www.tectite.com/fmdoc/geoip_lic.php */
+/* Help: https://www.tectite.com/fmdoc/geoip_lic.php */
 $GEOIP_LIC = ""; /* default - no GeoIP */
 
-/* Help: http://www.tectite.com/fmdoc/zero_is_empty.php */
+/* Help: https://www.tectite.com/fmdoc/zero_is_empty.php */
 $ZERO_IS_EMPTY = false;
 
-/* Help: http://www.tectite.com/fmdoc/session_name.php */
+/* Help: https://www.tectite.com/fmdoc/session_name.php */
 $SESSION_NAME = "";
 
-/* Help: http://www.tectite.com/fmdoc/session_access.php */
+/* Help: https://www.tectite.com/fmdoc/session_access.php */
 $SESSION_ACCESS = array();
 
-/* Help: http://www.tectite.com/fmdoc/destroy_session.php */
+/* Help: https://www.tectite.com/fmdoc/destroy_session.php */
 $DESTROY_SESSION = true;
 
-/* Help: http://www.tectite.com/fmdoc/hook_dir.php */
+/* Help: https://www.tectite.com/fmdoc/hook_dir.php */
 $HOOK_DIR = "";
 
 /* UPGRADE CONTROL
@@ -1477,9 +1477,9 @@ function LoadBuiltinLanguage()
 	//  $FM_VERS    the FormMail version number
 	//  $TECTITE    www.tectite.com
 	$aMessages[MSG_ABOUT_FORMMAIL] = 'Your form submission was processed by ' .
-	                                 '<a href="http://$TECTITE/">FormMail</a> ' .
+	                                 '<a href="https://$TECTITE/">FormMail</a> ' .
 	                                 '($FM_VERS), a PHP script available from ' .
-	                                 '<a href="http://$TECTITE/">$TECTITE</a>.';
+	                                 '<a href="https://$TECTITE/">$TECTITE</a>.';
 
 	// MSG_PREG_FAILED is sent in an Alert message if the TectiteCRM
 	// system failed to return the expected result.
@@ -2355,7 +2355,7 @@ function LoadBuiltinLanguage()
 	                              'as it appears to be an abuse of our server (' .
 	                              '$SERVER).<br />' .
 	                              'Our supplier of forms processing software has ' .
-	                              'provided <a href="http://www.tectite.com/serverabuse.php" ' .
+	                              'provided <a href="https://www.tectite.com/serverabuse.php" ' .
 	                              ' target="_blank">more information about this error</a>.<br /><br />' .
 	                              '$USERINFO';
 
@@ -4025,11 +4025,11 @@ function    LineFolding($s_str,$i_max_line,$s_before,$s_after,$s_fold)
 // Process a string to fit the requirements of RFC2045 section 6.7. Note that
 // this works, but replaces more characters than the minimum set.
 // Prior to version 8.34, for readability the spaces were not encoded, which was
-// WRONG (see http://tools.ietf.org/html/rfc2047#section-2).  Spaces must
+// WRONG (see https://tools.ietf.org/html/rfc2047#section-2).  Spaces must
 // be encoded.
 //
 // Adapted from:
-//  http://www.php.net/manual/en/function.quoted-printable-decode.php
+//  https://www.php.net/manual/en/function.quoted-printable-decode.php
 // Note that we *must* split long lines because a QP string might not
 // contain any Folding White Space (FWS). In this case, it would
 // not be possible to fold the line according to RFC 2822.
@@ -4074,7 +4074,7 @@ function CheckVersion()
 {
 	global $FM_VERS;
 
-	$http_get     = new HTTPGet("http://www.tectite.com/fmversion.txt");
+	$http_get     = new HTTPGet("https://www.tectite.com/fmversion.txt");
 	$php_errormsg = ""; // clear this out in case we get an error that doesn't set it
 	FMDebug("CheckVersion");
 	if (($a_lines = $http_get->Read()) !== false) {
@@ -7928,9 +7928,9 @@ function CreatePage($text,$title = "",$b_show_about = true)
 		));
 	} else {
 		echo
-			'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">' .
+			'<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">' .
 			"\n";
-		echo '<html xmlns="http://www.w3.org/1999/xhtml">' . "\n";
+		echo '<html xmlns="https://www.w3.org/1999/xhtml">' . "\n";
 		echo "<head>\n";
 		if (isset($sHTMLCharSet) && $sHTMLCharSet !== "") {
 			echo "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=$sHTMLCharSet\" />\n";
@@ -8373,7 +8373,7 @@ function StripHTML($m_value,$s_line_feed = "\n")
 	//
 	$s_str = preg_replace('/<br[[:space:]]*\/?[[:space:]]*>/i',$s_line_feed,$s_str);
 	//
-	// overcome this bug: http://bugs.php.net/bug.php?id=21311
+	// overcome this bug: https://bugs.php.net/bug.php?id=21311
 	//
 	$s_str = preg_replace('/<![^>]*>/s','',$s_str);
 	//
@@ -12189,7 +12189,7 @@ function WriteARLog($s_to,$s_subj,$s_info)
 
 //
 // First, a special case; if formmail.php is called like this:
-//  http://.../formmail.php?testalert=1
+//  https://.../formmail.php?testalert=1
 // it sends a test message to the default alert address with some
 // information about your PHP version and the DOCUMENT_ROOT.
 //

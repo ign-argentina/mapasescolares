@@ -1,76 +1,79 @@
-body { margin:0; padding:0; }
+body {
+  margin: 0;
+  padding: 0;
+}
 #mapa {
-	position:absolute;
-	top:0;
-	bottom:0;
-	width:540px;
-	height: 300px;
-	background-color: white
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 540px;
+  height: 300px;
+  background-color: white
 }
 .argenmapMapFooter {
-	font-family: Arial;
-	color: white;
-	box-shadow: rgb(5, 66, 100) 0px 0px 11px inset;
-	font-size: 10px;
-	text-align: right;
-	height: 20px;
-	min-height: 15px;
-	line-height: 20px;
-	vertical-align: middle;
-	padding: 2px;
-	margin: 0px;
-	border: 0px;
-	overflow: hidden;
-	background-color: rgb(28, 116, 165);
-	width: 100%;
-	z-index: 500 !important;
+  font-family: Arial;
+  color: white;
+  box-shadow: rgb(5, 66, 100) 0px 0px 11px inset;
+  font-size: 10px;
+  text-align: right;
+  height: 20px;
+  min-height: 15px;
+  line-height: 20px;
+  vertical-align: middle;
+  padding: 2px;
+  margin: 0px;
+  border: 0px;
+  overflow: hidden;
+  background-color: rgb(28, 116, 165);
+  width: 100%;
+  z-index: 500 !important;
 }
 .leaflet-bottom .leaflet-control-scale {
-	padding-bottom: 25px !important;
+  padding-bottom: 25px !important;
 }
 .leaflet-control-attribution, .leaflet-control-attribution a {
-	padding-bottom: 3px !important;
-	background-color: transparent !important;
-	color: white;
-	font-size: 12px;
+  padding-bottom: 3px !important;
+  background-color: transparent !important;
+  color: white;
+  font-size: 12px;
 }
 .leaflet-control-layers {
-	border-radius: 0px !important;
-	border: 1px solid white !important;
-	-webkit-box-shadow: 0px 8px 6px -2px rgba(138,138,138,1) !important;
-	-moz-box-shadow: 0px 8px 6px -2px rgba(138,138,138,1) !important;
-	box-shadow: 0px 8px 6px -2px rgba(138,138,138,1) !important;
+  border-radius: 0px !important;
+  border: 1px solid white !important;
+  -webkit-box-shadow: 0px 8px 6px -2px rgba(138, 138, 138, 1) !important;
+  -moz-box-shadow: 0px 8px 6px -2px rgba(138, 138, 138, 1) !important;
+  box-shadow: 0px 8px 6px -2px rgba(138, 138, 138, 1) !important;
 }
 .leaflet-touch .leaflet-bar {
-	border: 1px solid white !important;
-	-webkit-box-shadow: 0px 8px 6px -2px rgba(138,138,138,1) !important;
-	-moz-box-shadow: 0px 8px 6px -2px rgba(138,138,138,1) !important;
-	box-shadow: 0px 8px 6px -2px rgba(138,138,138,1) !important;
+  border: 1px solid white !important;
+  -webkit-box-shadow: 0px 8px 6px -2px rgba(138, 138, 138, 1) !important;
+  -moz-box-shadow: 0px 8px 6px -2px rgba(138, 138, 138, 1) !important;
+  box-shadow: 0px 8px 6px -2px rgba(138, 138, 138, 1) !important;
 }
 .leaflet-bar a {
-	width: 23px !important;
-	height: 24px !important;
-	line-height: 25px !important;
-	opacity: 0.6 !important;
+  width: 23px !important;
+  height: 24px !important;
+  line-height: 25px !important;
+  opacity: 0.6 !important;
 }
 .leaflet-right .leaflet-control {
-	margin-right: 0px !important;
+  margin-right: 0px !important;
 }
 .leaflet-touch .leaflet-control-layers-toggle {
-    width: 35px !important;
-    height: 35px !important;
+  width: 35px !important;
+  height: 35px !important;
 }
 .leaflet-control-zoom-in, .leaflet-control-zoom-out, .leaflet-control-layers-expanded, .leaflet-control-fullscreen-button, div.leaflet-control-layers {
-	color: white !important;
-	background-color: #135ab3 !important;
-	opacity: 0.7 !important;
+  color: white !important;
+  background-color: #135ab3 !important;
+  opacity: 0.7 !important;
 }
 .leaflet-control-fullscreen a {
-	background-color: transparent !important;
+  background-color: transparent !important;
 }
 .iconoCapa {
-	width: 15px; 
-	background-color: white;
-	box-shadow: 0 0 10px white;
-	border-radius: 50%
+  width: 15px;
+  background-color: white;
+  box-shadow: 0 0 10px white;
+  border-radius: 50%
 }

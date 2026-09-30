@@ -3,7 +3,7 @@
  *  leaflet.browser.print - v0.3.4 (https://github.com/Igor-Vladyka/leaflet.browser.print) 
  *  A leaflet plugin which allows users to print the map directly from the browser
  *  
- *  MIT (http://www.opensource.org/licenses/mit-license.php)
+ *  MIT (https://www.opensource.org/licenses/mit-license.php)
  *  (c) 2017  Igor Vladyka <igor.vladyka@gmail.com> (https://github.com/Igor-Vladyka/)
  * 
  * Minor fix https://github.com/gvarela1981  (add pre-print event)

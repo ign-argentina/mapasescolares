@@ -6,7 +6,7 @@ window.mobilecheck = function() {
 
 $(document).ready(function(){
 	$('body').append('<div id="cover" style="position: absolute;top: 0;left: 0;right: 0;bottom: -300px; opacity: 0.80;background: #aaa;z-index: 10000;display: none;"></div>');
-	$('body').append('<div id="msgBoxMovile" style="position: absolute; top: 35%; height: 190px;  width: 100%; display: none; border: 1px solid; z-index: 10001; margin: 10px 0px; padding:15px 10px 15px 25px; background-repeat: no-repeat; background-position: 10px center; color: #00529B; background-color: #BDE5F8;"> <p>Atención: No es recomendable utilizar esta herramienta en dispositivos móviles. Si necesita descargar un mapa, haga click <a href="http://mapasescolares.ign.gob.ar/dist/src/galeriaDeMapas.html"><u>aquí</u></a>. </p> <p> Si necesita utilizar la herramienta interactiva, por favor ingrese desde un dispositivo con mayor tamaño de pantalla </p> </div>');
+	$('body').append('<div id="msgBoxMovile" style="position: absolute; top: 35%; height: 190px;  width: 100%; display: none; border: 1px solid; z-index: 10001; margin: 10px 0px; padding:15px 10px 15px 25px; background-repeat: no-repeat; background-position: 10px center; color: #00529B; background-color: #BDE5F8;"> <p>Atención: No es recomendable utilizar esta herramienta en dispositivos móviles. Si necesita descargar un mapa, haga click <a href="https://mapasescolares.ign.gob.ar/dist/src/galeriaDeMapas.html"><u>aquí</u></a>. </p> <p> Si necesita utilizar la herramienta interactiva, por favor ingrese desde un dispositivo con mayor tamaño de pantalla </p> </div>');
 	if (mobilecheck()) {
 		$("#cover").fadeIn(100);
 		$('#msgBoxMovile').show();

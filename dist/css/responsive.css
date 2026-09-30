@@ -1,560 +1,406 @@
 /* estilo para hacer la herramienta responsive. Incluye el estilo específico para las notebook de Conectar Igualdad (1024x600) */
 @media (min-height: 1025px) and (max-height: 1080px) {
-            .leaflet-map {
-                height:967px;
-            }
-            img.leaflet-image-layer {
-                top: -15px;
-            }
-
-            footer {   
-                height: 85px;
-            }
-
-            footer h1 {
-                margin-top: 10px;
-            }
-        }
-
-        @media (min-height: 925px) and (max-height: 1024px) {
-            
-            footer {
-                font-size: 12px;
-                height: 75px;
-            }
-            footer h1 {
-                font-size: 30px;
-                margin-top: 10px;
-            }
-            .searchBox {
-                left:  -30px;
-            }
-
-            input#searchBox{
-                width: 205px;
-                font-size: larger;
-            }
-
-            input.tt-hint {
-                width: 225px;
-            }
-
-            #mapaArgentinaBicontinental {
-                width: 240px;
-                height: 545px;
-                right: 10%;
-            }
-            input#searchBox{
-                width: 260px;
-                font-size: x-large;
-            }    
-        }
-
-        @media (min-height: 825px) and (max-height: 924px) {
-            .leaflet-map {
-                height:698px;
-            }
-
-            footer {
-                font-size: 12px;
-                height: 75px;
-            }
-            footer h1 {
-                font-size: 30px;
-                margin-top: 10px;
-            }
-            .searchBox {
-                left:  -5px;
-            }
-
-            #mapaArgentinaBicontinental {
-                width: 230px;
-                height: 520px;
-                right: 9%;
-            }
-
-            .parent2 {
-                width: 90px;
-                height: 90px;
-            }
-
-            .mask2 {
-                width: 90px;
-                height: 90px;
-            }
-
-            .test3 i{
-                position: absolute;
-                right: 13px;
-                top: -3px;
-            }
-
-            .test4 i{
-                position: absolute;
-                right: 19px;
-                top: -2px;
-            }
-
-            .searchBox {
-                top: -20px;
-                left: 20px
-            }
-            input#searchBox{
-                width: 205px;
-                font-size: larger;
-            }
-
-            input.tt-hint {
-                width: 225px;
-            }
-
-            .tt-dropdown-menu{
-                width: 260px;
-            }
-        }
-
-        @media (min-height: 768px) and (max-height: 824px) {
-            .leaflet-map {
-                height:644px;
-            }
-
-            footer {
-                font-size: 12px;
-                height: 75px;
-            }
-            footer h1 {
-                font-size: 30px;
-                margin-top: 10px;
-            }
-
-            .animatedMenu {
-                margin-top: 95px;
-            }
-
-            .searchBox {
-                left:  -5px;
-            }
-
-            #mapaArgentinaBicontinental {
-                width: 210px;
-                height: 475px;
-                right: 7%;
-            }
-
-            .parent2 {
-                width: 75px;
-                height: 75px;
-            }
-
-            .mask2 {
-                width: 75px;
-                height: 75px;
-            }
-
-            .mask2 i {
-                position: absolute;
-                top: 7px;
-                right: 25px;
-            }
-
-            .test1 i{
-                position: absolute;
-                right: 15px;
-                top: 8px;
-            }
-
-            .test2 i {
-                position: absolute;
-                right: 15px;
-                top: 9px;
-            }
-
-            .test3 i {
-                position: absolute;
-                right: 16px;
-                top: 8px;
-            }
-
-            .test4 i{
-                position: absolute;
-                right: 18px;
-                top: 8px;
-            }
-
-            .searchBox {
-                left: 10px
-            }
-            input#searchBox{
-                width: 210px;
-                font-size: larger;
-            }
-
-            input.tt-hint {
-                width: 215px;
-            }
-
-            div#selectionButtonPlanisferio {
-                background-size: contain;
-            }
-
-            div#selectionButtonAmerica {
-                background-size: contain;   
-            }
-
-            div#selectionButtonArgentina {
-                background-size: contain;
-            }
-
-            div#selectionButtonAntartida {
-                background-size: contain;
-            }
-
-            div#selectionButtonIslasMalvinas {
-                background-size: contain;
-            }
-
-            div#selectionButtonAMBA {
-                background-size: contain;
-            }
-
-            .otrosMapas {
-                height: 50px;
-                width: 210px;
-            }
-
-            .tt-suggestion {
-                font-size: large;   
-            }
-
-            .tt-dropdown-menu{
-                width: 230px;
-            }
-
-            .activo1 {
-                transform: translate(0px, 100px) !important;
-            }
-
-            .activo2 {
-                transform: translate(-45px, 80px) !important;
-            }
-
-            .activo3 {
-                transform: translate(-80px, 45px) !important;
-            }
-
-            .activo4 {
-                transform: translate(-100px,0px) !important;
-            }
-
-            div > i.fa-2x {
-                font-size: 1em;
-            }
-
-            div > i.fa-3x {
-                font-size: 2em;
-            }
-        }
-
-
-        @media (min-height: 676px) and (max-height: 767px) {
-            .leaflet-map {
-                height:550px;
-            }
-
-            footer {
-                font-size: 12px;
-                height: 75px;
-            }
-            footer h1 {
-                font-size: 30px;
-                margin-top: 10px;
-            }
-            .searchBox {
-                left:  -5px;
-            }
-
-            .animatedMenu {
-                margin-top: 95px;
-            }
-
-            #mapaArgentinaBicontinental {
-                width: 195px;
-                height: 445px;
-                right: 5%;
-            }
-
-            .parent2 {
-                width: 75px;
-                height: 75px;
-            }
-
-            .mask2 {
-                width: 75px;
-                height: 75px;
-            }
-
-            .mask2 i {
-                position: absolute;
-                top: 7px;
-                right: 25px;
-            }
-
-            .test1 i{
-                position: absolute;
-                right: 15px;
-                top: 8px;
-            }
-
-            .test2 i {
-                position: absolute;
-                right: 15px;
-                top: 9px;
-            }
-
-            .test3 i {
-                position: absolute;
-                right: 16px;
-                top: 8px;
-            }
-
-            .test4 i{
-                position: absolute;
-                right: 18px;
-                top: 8px;
-            }
-
-            .searchBox {
-                left: -35px;
-            }
-            input#searchBox{
-                width: 210px;
-                font-size: larger;
-            }
-
-            input.tt-hint {
-                width: 220px;
-            }
-
-            div#selectionButtonPlanisferio {
-                background-size: contain;
-            }
-
-            div#selectionButtonAmerica {
-                background-size: contain;   
-            }
-
-            div#selectionButtonArgentina {
-                background-size: contain;
-            }
-
-            div#selectionButtonAntartida {
-                background-size: contain;
-            }
-
-            div#selectionButtonIslasMalvinas {
-                background-size: contain;
-            }
-
-            div#selectionButtonAMBA {
-                background-size: contain;
-            }
-
-            .activo1 {
-                transform: translate(0px, 100px) !important;
-            }
-
-            .activo2 {
-                transform: translate(-45px, 80px) !important;
-            }
-
-            .activo3 {
-                transform: translate(-80px, 45px) !important;
-            }
-
-            .activo4 {
-                transform: translate(-100px,0px) !important;
-            }
-
-            .otrosMapas {
-                height: 47px;
-                width: 200px;
-            }
-
-            .tt-suggestion {
-                font-size: large;   
-            }
-
-            .tt-dropdown-menu{
-                width: 230px;
-            }
-
-            div > i.fa-2x {
-                font-size: 1em;
-            }
-
-            div > i.fa-3x {
-                font-size: 2em;
-            }
-        }
-
-        @media (max-height: 675px) {
-            .leaflet-map {
-                height:493px;
-            }       
-            footer {
-                font-size: 9px;
-                height: 55px;
-            }
-
-            footer h1 {
-                font-size: 15px;
-                margin-top: 10px;
-            }
-
-            .parent2 {
-                width: 60px;
-                height: 60px;
-            }
-
-            .mask2 {
-                width: 60px;
-                height: 60px;
-            }
-            .mask2 i {
-                position: absolute;
-                right: 18px;
-            }
-
-            .test1 i{
-                position: absolute;
-                right: 11px;
-                top: 3px;
-            }
-
-            .test2 i, .test3 i{
-                position: absolute;
-                right: 12px;
-                top: 3px;
-            }
-
-            .test4 i{
-                position: absolute;
-                right: 14px;
-                top: 3px;
-            }
-
-            .animatedMenu {
-                margin-top: 80px;
-            }
-
-            #mapaArgentinaBicontinental {
-                width: 170px;
-                height: 375px;
-                right: 5%;
-            }
-            
-            input#searchBox{
-                width: 210px;
-                font-size: larger;
-            }
-
-            input.tt-hint {
-                width: 230px;
-            }
-
-            .activo1 {
-                transform: translate(0px, 85px) !important;
-            }
-
-            .activo2 {
-                transform: translate(-40px, 70px) !important;
-            }
-
-            .activo3 {
-                transform: translate(-70px, 40px) !important;
-            }
-
-            .activo4 {
-                transform: translate(-85px,0px) !important;
-            }
-
-            div#buttons {
-                left: 45px;
-            }
-
-            div#selectionButtonPlanisferio {
-                background-size: contain;
-            }
-
-            div#selectionButtonAmerica {
-                background-size: contain;   
-            }
-
-            div#selectionButtonArgentina {
-                background-size: contain;
-            }
-
-            div#selectionButtonAntartida {
-                background-size: contain;
-            }
-
-            div#selectionButtonIslasMalvinas {
-                background-size: contain;
-            }
-
-            div#selectionButtonAMBA {
-                background-size: contain;
-            }
-
-            .otrosMapas {
-                height: 44px;
-                width: 190px;
-            }
-
-            .tt-suggestion {
-                font-size: medium;   
-            }
-
-            .tt-dropdown-menu{
-                width: 230px;
-            }
-            
-            div > i.fa-2x {
-                font-size: 1em;
-            }
-
-            div > i.fa-3x {
-                font-size: 2em;
-            }
-        }
-
-
-        @media (max-width: 1200px) and (min-height: 925px) and (max-height: 1024px)  {
-            body {
-                width: 1200px;
-            }
-        }
-
-        @media (max-width: 1090px) and (min-height: 825px) and (max-height: 924px)  {
-            body {
-                width: 1090px;
-            }
-        }
-
-        @media (max-width: 985px) and (min-height: 768px) and (max-height: 824px) {
-            body {
-                width: 985px;
-            }
-        }
-
-        @media (max-width: 880px) and (min-height: 676px) and (max-height: 767px) {
-            body {
-                width: 880px;
-            }
-        }
-
-        @media (max-width: 775px) and (min-height: 480px) and (max-height: 675px) {
-            body {
-                width: 775px;
-            }
-        }
+  .leaflet-map {
+    height: 967px;
+  }
+  img.leaflet-image-layer {
+    top: -15px;
+  }
+}
+@media (min-height: 925px) and (max-height: 1024px) {
+  .searchBox {
+    left: -30px;
+  }
+  input#searchBox {
+    width: 205px;
+    font-size: larger;
+  }
+  input.tt-hint {
+    width: 225px;
+  }
+  #mapaArgentinaBicontinental {
+    width: 240px;
+    height: 545px;
+    right: 10%;
+  }
+  input#searchBox {
+    width: 260px;
+    font-size: x-large;
+  }
+}
+@media (min-height: 825px) and (max-height: 924px) {
+  .leaflet-map {
+    height: 698px;
+  }
+  .searchBox {
+    left: -5px;
+  }
+  #mapaArgentinaBicontinental {
+    width: 230px;
+    height: 520px;
+    right: 9%;
+  }
+  .parent2 {
+    width: 90px;
+    height: 90px;
+  }
+  .mask2 {
+    width: 90px;
+    height: 90px;
+  }
+  .test3 i {
+    position: absolute;
+    right: 13px;
+    top: -3px;
+  }
+  .test4 i {
+    position: absolute;
+    right: 19px;
+    top: -2px;
+  }
+  .searchBox {
+    top: -20px;
+    left: 20px
+  }
+  input#searchBox {
+    width: 205px;
+    font-size: larger;
+  }
+  input.tt-hint {
+    width: 225px;
+  }
+  .tt-dropdown-menu {
+    width: 260px;
+  }
+}
+@media (min-height: 768px) and (max-height: 824px) {
+  .leaflet-map {
+    height: 644px;
+  }
+  .animatedMenu {
+    margin-top: 95px;
+  }
+  .searchBox {
+    left: -5px;
+  }
+  #mapaArgentinaBicontinental {
+    width: 210px;
+    height: 475px;
+    right: 7%;
+  }
+  .parent2 {
+    width: 75px;
+    height: 75px;
+  }
+  .mask2 {
+    width: 75px;
+    height: 75px;
+  }
+  .mask2 i {
+    position: absolute;
+    top: 7px;
+    right: 25px;
+  }
+  .test1 i {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+  }
+  .test2 i {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+  }
+  .test3 i {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+  }
+  .test4 i {
+    position: absolute;
+    right: 18px;
+    top: 8px;
+  }
+  .searchBox {
+    left: 10px
+  }
+  input#searchBox {
+    width: 210px;
+    font-size: larger;
+  }
+  input.tt-hint {
+    width: 215px;
+  }
+  div#selectionButtonPlanisferio {
+    background-size: contain;
+  }
+  div#selectionButtonAmerica {
+    background-size: contain;
+  }
+  div#selectionButtonArgentina {
+    background-size: contain;
+  }
+  div#selectionButtonAntartida {
+    background-size: contain;
+  }
+  div#selectionButtonIslasMalvinas {
+    background-size: contain;
+  }
+  div#selectionButtonAMBA {
+    background-size: contain;
+  }
+  .otrosMapas {
+    height: 50px;
+    width: 210px;
+  }
+  .tt-suggestion {
+    font-size: large;
+  }
+  .tt-dropdown-menu {
+    width: 230px;
+  }
+  .activo1 {
+    transform: translate(0px, 100px) !important;
+  }
+  .activo2 {
+    transform: translate(-45px, 80px) !important;
+  }
+  .activo3 {
+    transform: translate(-80px, 45px) !important;
+  }
+  .activo4 {
+    transform: translate(-100px, 0px) !important;
+  }
+  div>i.fa-2x {
+    font-size: 1em;
+  }
+  div>i.fa-3x {
+    font-size: 2em;
+  }
+}
+@media (min-height: 676px) and (max-height: 767px) {
+  .leaflet-map {
+    height: 550px;
+  }
+  .searchBox {
+    left: -5px;
+  }
+  .animatedMenu {
+    margin-top: 95px;
+  }
+  #mapaArgentinaBicontinental {
+    width: 195px;
+    height: 445px;
+    right: 5%;
+  }
+  .parent2 {
+    width: 75px;
+    height: 75px;
+  }
+  .mask2 {
+    width: 75px;
+    height: 75px;
+  }
+  .mask2 i {
+    position: absolute;
+    top: 7px;
+    right: 25px;
+  }
+  .test1 i {
+    position: absolute;
+    right: 15px;
+    top: 8px;
+  }
+  .test2 i {
+    position: absolute;
+    right: 15px;
+    top: 9px;
+  }
+  .test3 i {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+  }
+  .test4 i {
+    position: absolute;
+    right: 18px;
+    top: 8px;
+  }
+  .searchBox {
+    left: -35px;
+  }
+  input#searchBox {
+    width: 210px;
+    font-size: larger;
+  }
+  input.tt-hint {
+    width: 220px;
+  }
+  div#selectionButtonPlanisferio {
+    background-size: contain;
+  }
+  div#selectionButtonAmerica {
+    background-size: contain;
+  }
+  div#selectionButtonArgentina {
+    background-size: contain;
+  }
+  div#selectionButtonAntartida {
+    background-size: contain;
+  }
+  div#selectionButtonIslasMalvinas {
+    background-size: contain;
+  }
+  div#selectionButtonAMBA {
+    background-size: contain;
+  }
+  .activo1 {
+    transform: translate(0px, 100px) !important;
+  }
+  .activo2 {
+    transform: translate(-45px, 80px) !important;
+  }
+  .activo3 {
+    transform: translate(-80px, 45px) !important;
+  }
+  .activo4 {
+    transform: translate(-100px, 0px) !important;
+  }
+  .otrosMapas {
+    height: 47px;
+    width: 200px;
+  }
+  .tt-suggestion {
+    font-size: large;
+  }
+  .tt-dropdown-menu {
+    width: 230px;
+  }
+  div>i.fa-2x {
+    font-size: 1em;
+  }
+  div>i.fa-3x {
+    font-size: 2em;
+  }
+}
+@media (max-height: 675px) {
+  .leaflet-map {
+    height: 493px;
+  }
+  .parent2 {
+    width: 60px;
+    height: 60px;
+  }
+  .mask2 {
+    width: 60px;
+    height: 60px;
+  }
+  .mask2 i {
+    position: absolute;
+    right: 18px;
+  }
+  .test1 i {
+    position: absolute;
+    right: 11px;
+    top: 3px;
+  }
+  .test2 i, .test3 i {
+    position: absolute;
+    right: 12px;
+    top: 3px;
+  }
+  .test4 i {
+    position: absolute;
+    right: 14px;
+    top: 3px;
+  }
+  .animatedMenu {
+    margin-top: 80px;
+  }
+  #mapaArgentinaBicontinental {
+    width: 170px;
+    height: 375px;
+    right: 5%;
+  }
+  input#searchBox {
+    width: 210px;
+    font-size: larger;
+  }
+  input.tt-hint {
+    width: 230px;
+  }
+  .activo1 {
+    transform: translate(0px, 85px) !important;
+  }
+  .activo2 {
+    transform: translate(-40px, 70px) !important;
+  }
+  .activo3 {
+    transform: translate(-70px, 40px) !important;
+  }
+  .activo4 {
+    transform: translate(-85px, 0px) !important;
+  }
+  div#buttons {
+    left: 45px;
+  }
+  div#selectionButtonPlanisferio {
+    background-size: contain;
+  }
+  div#selectionButtonAmerica {
+    background-size: contain;
+  }
+  div#selectionButtonArgentina {
+    background-size: contain;
+  }
+  div#selectionButtonAntartida {
+    background-size: contain;
+  }
+  div#selectionButtonIslasMalvinas {
+    background-size: contain;
+  }
+  div#selectionButtonAMBA {
+    background-size: contain;
+  }
+  .otrosMapas {
+    height: 44px;
+    width: 190px;
+  }
+  .tt-suggestion {
+    font-size: medium;
+  }
+  .tt-dropdown-menu {
+    width: 230px;
+  }
+  div>i.fa-2x {
+    font-size: 1em;
+  }
+  div>i.fa-3x {
+    font-size: 2em;
+  }
+}
+@media (max-width: 1200px) and (min-height: 925px) and (max-height: 1024px) {
+  body {
+    width: 1200px;
+  }
+}
+@media (max-width: 1090px) and (min-height: 825px) and (max-height: 924px) {
+  body {
+    width: 1090px;
+  }
+}
+@media (max-width: 985px) and (min-height: 768px) and (max-height: 824px) {
+  body {
+    width: 985px;
+  }
+}
+@media (max-width: 880px) and (min-height: 676px) and (max-height: 767px) {
+  body {
+    width: 880px;
+  }
+}
+/* @media (max-width: 775px) and (min-height: 480px) and (max-height: 675px) {
+  body {
+    width: 775px;
+  }
+} */

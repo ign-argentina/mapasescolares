@@ -40,7 +40,7 @@
         map.initialZoom = map.getZoom();
         map.addControl(zoomMenu);
 
-        currentImageUrl = typeof imageUrl !== 'undefined' ? imageUrl :'http://mapasescolares.ign.gob.ar/images/mapas/MapaEscolar000_ArgentinaBicontinental_2000x2500.png';
+        currentImageUrl = typeof imageUrl !== 'undefined' ? imageUrl :'https://mapasescolares.ign.gob.ar/images/mapas/MapaEscolar000_ArgentinaBicontinental_2000x2500.png';
         loadImage(currentImageUrl);
         /*
         // Load the drawControl script
